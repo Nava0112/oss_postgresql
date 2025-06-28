@@ -1,0 +1,29 @@
+<!-- templates/admin_home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container mt-5">
+    <div class="card shadow">
+      <div class="card-header bg-dark text-white text-center">
+        <h3>Welcome Admin</h3>
+      </div>
+      <div class="card-body text-center">
+        <p class="mb-4">Choose a section to view:</p>
+
+        <div class="d-grid gap-3 col-6 mx-auto">
+          <a href="{{ url_for('view_records', record_type='customers') }}" class="btn btn-primary">View Customers</a>
+          <a href="{{ url_for('view_records', record_type='suppliers') }}" class="btn btn-success">View Suppliers</a>
+          <a href="{{ url_for('view_records', record_type='products') }}" class="btn btn-warning">View Products</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
