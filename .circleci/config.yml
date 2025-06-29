@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: navarasan/flask-supabase-app
+      - image: navarasan0112/flask-supabase-app:latest
     steps:
       - checkout
       - run:
