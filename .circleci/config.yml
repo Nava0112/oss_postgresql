@@ -3,17 +3,27 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: navarasan0112/flask-supabase-app
-
+      - image: navarasan/flask-supabase-app
     steps:
       - checkout
-
       - run:
           name: ✅ Run tests
           command: pytest test_app.py
 
+  deploy:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - run:
+          name: 🚀 Trigger Render Deployment
+          command: |
+            curl -X POST https://api.render.com/deploy/srv-xxxxxxx?key=https://api.render.com/deploy/srv-d1g3iv6mcj7s73cbbpbg?key=dc2XbOXGkfE
+
 workflows:
   version: 2
-  test-workflow:
+  test-and-deploy:
     jobs:
       - test
+      - deploy:
+          requires:
+            - test
