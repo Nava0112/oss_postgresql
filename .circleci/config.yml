@@ -17,7 +17,24 @@ jobs:
       - run:
           name: 🚀 Trigger Render Deployment
           command: |
-            curl -X POST https://api.render.com/deploy/srv-xxxxxxx?key=https://api.render.com/deploy/srv-d1g3iv6mcj7s73cbbpbg?key=dc2XbOXGkfE
+            curl -X POST "https://api.render.com/deploy/srv-xxxxxxx?key=dc2XbOXGkfE"
+      - run:
+          name: 📣 Notify Sleuth of Deployment
+          command: |
+            curl -X POST "https://app.sleuth.io/api/1/deployments" \
+              -H "Authorization: Bearer $SLEUTH_API_TOKEN" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "project": "your-sleuth-project",
+                "environment": "production",
+                "deployable": {
+                  "sha": "'"$CIRCLE_SHA1"'",
+                  "reference": "'"$CIRCLE_BRANCH"'"
+                },
+                "metadata": {
+                  "deployed_by": "'"$CIRCLE_USERNAME"'"
+                }
+              }'
 
 workflows:
   version: 2
