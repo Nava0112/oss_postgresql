@@ -149,15 +149,25 @@
       color: #7b5eb4;
       box-shadow: 0 4px 14px #bfa8f855;
     }
-    .link-light {
-      font-size: 1.05rem;
-      color: #bfa8f8;
-      text-decoration: underline;
-      transition: color 0.2s;
+    /* Enhanced New Customer Button */
+    .new-customer-btn {
+      border-radius: 2rem;
+      font-weight: 600;
+      border: 1.5px solid #bfa8f8;
+      background: #f7f3ff;
+      color: #7b5eb4 !important;
+      padding: 0.6rem 1.5rem;
+      font-size: 1.08rem;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+      box-shadow: 0 2px 8px #bfa8f855;
+      text-decoration: none !important;
+      display: inline-block;
+      margin-left: 0.5rem;
     }
-    .link-light:hover {
-      color: #7b5eb4;
-      text-decoration: underline;
+    .new-customer-btn:hover, .new-customer-btn:focus {
+      background: #e0eafc;
+      color: #bfa8f8 !important;
+      border-color: #bfa8f8;
     }
     @media (max-width: 700px) {
       .login-card {
@@ -169,6 +179,13 @@
       }
       .butterfly {
         display: none;
+      }
+      .d-flex.flex-wrap {
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+      }
+      .new-customer-btn {
+        margin-left: 0 !important;
       }
     }
   </style>
@@ -191,9 +208,9 @@
         <label for="Password" class="form-label">Password</label>
         <input type="password" class="form-control" name="Password" required>
       </div>
-      <div class="d-flex justify-content-between align-items-center mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
         <button type="submit" class="btn btn-primary">Login</button>
-        <a href="{{ url_for('add_customer') }}" class="link-light">New Customer?</a>
+        <a href="{{ url_for('add_customer') }}" class="new-customer-btn">New Customer?</a>
       </div>
       <hr>
       <div class="d-flex justify-content-between role-buttons mt-4">
