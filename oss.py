@@ -168,9 +168,9 @@ def buy_product(product_id):
 
         # Insert into Orders
         cursor.execute("""
-            INSERT INTO Orders (OrderID, CustomerID, ProductID, Order_Date, Quantity)
-            VALUES (%s, %s, %s, %s, %s)
-        """, (order_id, session['customer_id'], product_id, datetime.now(), quantity))
+    INSERT INTO Orders (OrderID, CustomerID, ProductID, Order_Date, Quantity, TotalPrice)
+    VALUES (%s, %s, %s, %s, %s, %s)
+""", (order_id, session['customer_id'], product_id, datetime.now(), quantity, total_price))
 
         # Reduce the stock
         cursor.execute("""
