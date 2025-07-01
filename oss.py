@@ -137,23 +137,58 @@ def products():
     conn.close()
     return render_template('products.html', products=products)
 
-@app.route('/buy_product/<int:product_id>')
+@app.route('/buy_product/<int:product_id>', methods=['GET', 'POST'])
 def buy_product(product_id):
     if 'customer_id' not in session:
         return redirect(url_for('login_customer'))
-    order_id = int(datetime.now().timestamp())
+
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("""
-        INSERT INTO Orders (OrderID, CustomerID, ProductID, Order_Date)
-        VALUES (%s, %s, %s, %s)
-    """, (order_id, session['customer_id'], product_id, datetime.now()))
+
+    # Get the product details
     cursor.execute("SELECT * FROM Products WHERE ProductID = %s", (product_id,))
     product = cursor.fetchone()
-    conn.commit()
+
+    if not product:
+        cursor.close()
+        conn.close()
+        return "Product not found", 404
+
+    if request.method == 'POST':
+        quantity = int(request.form['quantity'])
+
+        available_stock = product[5]  # QuantityInStock
+        if quantity > available_stock:
+            cursor.close()
+            conn.close()
+            return f"Only {available_stock} items left in stock.", 400
+
+        order_id = int(datetime.now().timestamp())
+        total_price = product[4] * quantity
+
+        # Insert into Orders
+        cursor.execute("""
+    INSERT INTO Orders (OrderID, CustomerID, ProductID, Order_Date, Quantity, TotalPrice)
+    VALUES (%s, %s, %s, %s, %s, %s)
+""", (order_id, session['customer_id'], product_id, datetime.now(), quantity, total_price))
+
+        # Reduce the stock
+        cursor.execute("""
+            UPDATE Products
+            SET QuantityInStock = QuantityInStock - %s
+            WHERE ProductID = %s
+        """, (quantity, product_id))
+
+        conn.commit()
+        cursor.close()
+        conn.close()
+
+        return render_template('order_confirmation.html', product=product, quantity=quantity, total_price=total_price)
+
     cursor.close()
     conn.close()
-    return render_template('order_confirmation.html', product=product)
+    return render_template('buy_product.html', product=product)
+
 
 
 @app.route('/supplier_products')
