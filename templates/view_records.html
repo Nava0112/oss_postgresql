@@ -5,64 +5,196 @@
   <title>{{ record_type }} List</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    table tbody tr:hover {
-      background-color: #f8f9fa;
-      cursor: pointer;
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f8fafc 0%, #e0eafc 100%);
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+    body {
+      min-height: 100vh;
+      width: 100vw;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* Butterfly SVGs as background */
+    .butterfly {
+      position: absolute;
+      z-index: 0;
+      opacity: 0.18;
+      pointer-events: none;
+      animation: float 10s infinite linear alternate;
+    }
+    .butterfly.b1 { top: 6%; left: 10%; width: 140px; transform: rotate(-12deg); animation-delay: 0s; }
+    .butterfly.b2 { top: 13%; right: 12%; width: 110px; transform: rotate(18deg); animation-delay: 2s; }
+    .butterfly.b3 { bottom: 10%; left: 16%; width: 90px; transform: rotate(-8deg); animation-delay: 1s; }
+    .butterfly.b4 { bottom: 12%; right: 14%; width: 140px; transform: rotate(8deg); animation-delay: 3s; }
+    @keyframes float {
+      0% { transform: translateY(0) scale(1) rotate(0); }
+      100% { transform: translateY(-30px) scale(1.05) rotate(6deg); }
+    }
+
+    .main-card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255,255,255,0.97);
+      padding: 3.5rem 2rem;
+      border-radius: 2rem;
+      box-shadow: 0 12px 40px 0 rgba(173, 216, 230, 0.16);
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      border: 2px solid #e0eafc;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-card .card-header {
+      background: linear-gradient(90deg, #bfa8f8 0%, #a3e6c3 100%);
+      border-radius: 1.5rem 1.5rem 0 0;
+      color: #fff;
+      text-align: left;
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px #bfa8f855;
+      border: none;
+      padding: 1.2rem 2rem 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .main-card .btn-light {
+      border-radius: 2rem;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #7b5eb4;
+      border: 1.5px solid #e0eafc;
+      background: #f7f3ff;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .main-card .btn-light:hover {
+      background: #e0eafc;
+      color: #bfa8f8;
+      border-color: #bfa8f8;
     }
     .table-container {
       max-height: 500px;
       overflow-y: auto;
+      margin-top: 1.5rem;
+    }
+    table {
+      background: #f7f3ff;
+      border-radius: 1.2rem;
+      overflow: hidden;
+      margin-bottom: 0;
+      min-width: 900px;
     }
     th, td {
       white-space: nowrap;
     }
+    th {
+      background: linear-gradient(90deg, #bfa8f8 0%, #e0eafc 100%);
+      color: #7b5eb4;
+      font-weight: 600;
+      font-size: 1.08rem;
+      border: none;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    td {
+      color: #8a73c7;
+      font-size: 1.05rem;
+      vertical-align: middle;
+    }
+    table tbody tr:hover {
+      background-color: #f8f9fa;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    tfoot {
+      background: #e0eafc;
+    }
+    .alert-warning {
+      border-radius: 1rem;
+      font-size: 1.1rem;
+      color: #7b5eb4;
+      background: #fffbe8;
+      border: 1.5px solid #ffe3a3;
+      margin-top: 2rem;
+    }
+    @media (max-width: 1200px) {
+      .main-card {
+        padding: 2.2rem 0.5rem;
+        max-width: 98vw;
+      }
+      table {
+        min-width: 650px;
+      }
+      .butterfly {
+        display: none;
+      }
+    }
+    @media (max-width: 700px) {
+      .main-card {
+        padding: 1.2rem 0.2rem;
+      }
+      table {
+        min-width: 400px;
+      }
+    }
   </style>
 </head>
-<body class="bg-light">
+<body>
+  <!-- Butterfly SVGs as decorative background -->
+  <svg class="butterfly b1" viewBox="0 0 64 64"><path fill="#bfa8f8" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#f7d6e0"/></svg>
+  <svg class="butterfly b2" viewBox="0 0 64 64"><path fill="#f7d6e0" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#bfa8f8"/></svg>
+  <svg class="butterfly b3" viewBox="0 0 64 64"><path fill="#e0eafc" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#bfa8f8"/></svg>
+  <svg class="butterfly b4" viewBox="0 0 64 64"><path fill="#bfa8f8" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#e0eafc"/></svg>
 
-  <div class="container py-5">
-    <div class="card shadow border-0">
-      <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-        <h4 class="mb-0">All {{ record_type }}</h4>
-        <a href="{{ url_for('admin_home') }}" class="btn btn-sm btn-light">⬅ Back</a>
-      </div>
-      <div class="card-body">
-
-        {% if records %}
-        <div class="table-responsive table-container">
-          <table class="table table-hover table-bordered table-striped align-middle">
-            <thead class="table-dark sticky-top">
-              <tr>
-                {% for header in headers %}
-                <th scope="col">{{ header }}</th>
-                {% endfor %}
-              </tr>
-            </thead>
-            <tbody>
-              {% for row in records %}
-              <tr>
-                {% for item in row %}
-                <td>{{ item }}</td>
-                {% endfor %}
-              </tr>
+  <div class="main-card card shadow border-0">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <span>All {{ record_type }}</span>
+      <a href="{{ url_for('admin_home') }}" class="btn btn-sm btn-light">⬅ Back</a>
+    </div>
+    <div class="card-body">
+      {% if records %}
+      <div class="table-responsive table-container">
+        <table class="table table-hover table-bordered table-striped align-middle">
+          <thead>
+            <tr>
+              {% for header in headers %}
+              <th scope="col">{{ header }}</th>
               {% endfor %}
-            </tbody>
-            <tfoot class="table-light">
-              <tr>
-                <td colspan="{{ headers|length }}" class="text-end fw-bold">
-                  Total {{ record_type }}: {{ records|length }}
-                </td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-        {% else %}
-        <div class="alert alert-warning text-center" role="alert">
-          No {{ record_type }} records found.
-        </div>
-        {% endif %}
-
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in records %}
+            <tr>
+              {% for item in row %}
+              <td>{{ item }}</td>
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="{{ headers|length }}" class="text-end fw-bold">
+                Total {{ record_type }}: {{ records|length }}
+              </td>
+            </tr>
+          </tfoot>
+        </table>
       </div>
+      {% else %}
+      <div class="alert alert-warning text-center" role="alert">
+        No {{ record_type }} records found.
+      </div>
+      {% endif %}
     </div>
   </div>
 
@@ -73,6 +205,5 @@
       });
     });
   </script>
-
 </body>
 </html>

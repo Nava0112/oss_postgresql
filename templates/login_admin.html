@@ -4,20 +4,157 @@
   <meta charset="UTF-8">
   <title>Admin Login</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f8fafc 0%, #e0eafc 100%);
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+    body {
+      min-height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    /* Butterfly SVGs as background */
+    .butterfly {
+      position: absolute;
+      z-index: 0;
+      opacity: 0.18;
+      pointer-events: none;
+      animation: float 10s infinite linear alternate;
+    }
+    .butterfly.b1 {
+      top: 6%;
+      left: 10%;
+      width: 140px;
+      transform: rotate(-12deg);
+      animation-delay: 0s;
+    }
+    .butterfly.b2 {
+      top: 13%;
+      right: 12%;
+      width: 110px;
+      transform: rotate(18deg);
+      animation-delay: 2s;
+    }
+    .butterfly.b3 {
+      bottom: 10%;
+      left: 16%;
+      width: 90px;
+      transform: rotate(-8deg);
+      animation-delay: 1s;
+    }
+    .butterfly.b4 {
+      bottom: 12%;
+      right: 14%;
+      width: 140px;
+      transform: rotate(8deg);
+      animation-delay: 3s;
+    }
+    @keyframes float {
+      0% { transform: translateY(0) scale(1) rotate(0); }
+      100% { transform: translateY(-30px) scale(1.05) rotate(6deg); }
+    }
+
+    .login-card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255,255,255,0.97);
+      padding: 3.5rem 3rem;
+      border-radius: 2rem;
+      box-shadow: 0 12px 40px 0 rgba(173, 216, 230, 0.16);
+      max-width: 440px;
+      width: 100%;
+      margin: 0 auto;
+      border: 2px solid #e0eafc;
+      display: flex;
+      flex-direction: column;
+    }
+    .login-card h2 {
+      font-weight: 700;
+      color: #7b5eb4;
+      margin-bottom: 2.2rem;
+      letter-spacing: 1px;
+      font-size: 2rem;
+      text-shadow: 0 2px 8px #e0eafc;
+      text-align: center;
+    }
+    .form-label {
+      font-weight: 500;
+      color: #8a73c7;
+      font-size: 1.07rem;
+    }
+    .form-control {
+      background: #f6f2ff;
+      border: 1px solid #e0eafc;
+      border-radius: 0.9rem;
+      padding: 1rem;
+      font-size: 1.13rem;
+      transition: border-color 0.2s;
+      box-shadow: 0 1px 6px #e0eafc40;
+    }
+    .form-control:focus {
+      border-color: #bfa8f8;
+      box-shadow: 0 0 0 2px #bfa8f855;
+      background: #fff;
+    }
+    .btn-primary {
+      padding: 0.75rem 2.5rem;
+      font-size: 1.15rem;
+      border-radius: 2rem;
+      background: linear-gradient(90deg, #bfa8f8 0%, #f7d6e0 100%);
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      box-shadow: 0 2px 8px #bfa8f855;
+      transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+    }
+    .btn-primary:hover, .btn-primary:focus {
+      background: linear-gradient(90deg, #f7d6e0 0%, #bfa8f8 100%);
+      color: #7b5eb4;
+      box-shadow: 0 4px 14px #bfa8f855;
+    }
+    @media (max-width: 700px) {
+      .login-card {
+        padding: 2.2rem 1rem;
+        max-width: 95vw;
+      }
+      .login-card h2 {
+        font-size: 1.3rem;
+      }
+      .butterfly {
+        display: none;
+      }
+    }
+  </style>
 </head>
-<body class="bg-light">
-  <div class="container mt-5">
-    <h2 class="mb-4">Admin Login</h2>
+<body>
+  <!-- Butterfly SVGs as decorative background -->
+  <svg class="butterfly b1" viewBox="0 0 64 64"><path fill="#bfa8f8" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#f7d6e0"/></svg>
+  <svg class="butterfly b2" viewBox="0 0 64 64"><path fill="#f7d6e0" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#bfa8f8"/></svg>
+  <svg class="butterfly b3" viewBox="0 0 64 64"><path fill="#e0eafc" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#bfa8f8"/></svg>
+  <svg class="butterfly b4" viewBox="0 0 64 64"><path fill="#bfa8f8" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#e0eafc"/></svg>
+
+  <div class="login-card">
+    <h2>Admin Login</h2>
     <form method="POST">
       <div class="mb-3">
         <label for="AdminID" class="form-label">Admin ID</label>
         <input type="text" class="form-control" name="AdminID" required>
       </div>
-      <div class="mb-3">
+      <div class="mb-4">
         <label for="AdminPassword" class="form-label">Password</label>
         <input type="password" class="form-control" name="AdminPassword" required>
       </div>
-      <button type="submit" class="btn btn-primary">Login</button>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Login</button>
+      </div>
     </form>
   </div>
 </body>

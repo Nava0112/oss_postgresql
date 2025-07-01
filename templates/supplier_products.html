@@ -4,35 +4,193 @@
     <meta charset="UTF-8">
     <title>My Supplied Products</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #e0eafc 100%);
+            font-family: 'Segoe UI', sans-serif;
+            overflow-x: hidden;
+        }
+        body {
+            min-height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        /* Butterfly SVGs as background */
+        .butterfly {
+            position: absolute;
+            z-index: 0;
+            opacity: 0.18;
+            pointer-events: none;
+            animation: float 10s infinite linear alternate;
+        }
+        .butterfly.b1 {
+            top: 6%;
+            left: 10%;
+            width: 140px;
+            transform: rotate(-12deg);
+            animation-delay: 0s;
+        }
+        .butterfly.b2 {
+            top: 13%;
+            right: 12%;
+            width: 110px;
+            transform: rotate(18deg);
+            animation-delay: 2s;
+        }
+        .butterfly.b3 {
+            bottom: 10%;
+            left: 16%;
+            width: 90px;
+            transform: rotate(-8deg);
+            animation-delay: 1s;
+        }
+        .butterfly.b4 {
+            bottom: 12%;
+            right: 14%;
+            width: 140px;
+            transform: rotate(8deg);
+            animation-delay: 3s;
+        }
+        @keyframes float {
+            0% { transform: translateY(0) scale(1) rotate(0); }
+            100% { transform: translateY(-30px) scale(1.05) rotate(6deg); }
+        }
+        .main-card {
+            position: relative;
+            z-index: 1;
+            background: rgba(255,255,255,0.97);
+            padding: 3.5rem 3rem;
+            border-radius: 2rem;
+            box-shadow: 0 12px 40px 0 rgba(173, 216, 230, 0.16);
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            border: 2px solid #e0eafc;
+            display: flex;
+            flex-direction: column;
+        }
+        h3 {
+            font-weight: 700;
+            color: #7b5eb4;
+            letter-spacing: 1px;
+            font-size: 2rem;
+            text-shadow: 0 2px 8px #e0eafc;
+            text-align: center;
+            margin-bottom: 2.2rem;
+        }
+        .table {
+            background: #f7f3ff;
+            border-radius: 1.2rem;
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+        .table th {
+            background: linear-gradient(90deg, #bfa8f8 0%, #e0eafc 100%);
+            color: #7b5eb4;
+            font-weight: 600;
+            font-size: 1.08rem;
+            border: none;
+        }
+        .table td {
+            color: #8a73c7;
+            font-size: 1.05rem;
+            vertical-align: middle;
+        }
+        .alert-warning {
+            border-radius: 1rem;
+            font-size: 1.1rem;
+            color: #7b5eb4;
+            background: #fffbe8;
+            border: 1.5px solid #ffe3a3;
+        }
+        .btn-success {
+            padding: 0.7rem 2.2rem;
+            font-size: 1.12rem;
+            border-radius: 2rem;
+            background: linear-gradient(90deg, #bfa8f8 0%, #a3e6c3 100%);
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            box-shadow: 0 2px 8px #bfa8f855;
+            transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+        }
+        .btn-success:hover, .btn-success:focus {
+            background: linear-gradient(90deg, #a3e6c3 0%, #bfa8f8 100%);
+            color: #7b5eb4;
+            box-shadow: 0 4px 14px #bfa8f855;
+        }
+        .btn-danger {
+            padding: 0.7rem 2.2rem;
+            font-size: 1.12rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            background: linear-gradient(90deg, #fc5c7d 0%, #bfa8f8 100%);
+            border: none;
+            color: #fff;
+            box-shadow: 0 2px 8px #fc5c7d33;
+            transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+        }
+        .btn-danger:hover, .btn-danger:focus {
+            background: linear-gradient(90deg, #bfa8f8 0%, #fc5c7d 100%);
+            color: #fff;
+            box-shadow: 0 4px 14px #fc5c7d33;
+        }
+        @media (max-width: 900px) {
+            .main-card {
+                padding: 2.2rem 0.5rem;
+                max-width: 98vw;
+            }
+            .table th, .table td {
+                font-size: 0.98rem;
+            }
+            .butterfly {
+                display: none;
+            }
+        }
+    </style>
 </head>
-<body class="bg-light">
-    <div class="container mt-5">
-        <h3 class="text-center mb-4">Products You Supply</h3>
+<body>
+    <!-- Butterfly SVGs as decorative background -->
+    <svg class="butterfly b1" viewBox="0 0 64 64"><path fill="#bfa8f8" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#f7d6e0"/></svg>
+    <svg class="butterfly b2" viewBox="0 0 64 64"><path fill="#f7d6e0" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#bfa8f8"/></svg>
+    <svg class="butterfly b3" viewBox="0 0 64 64"><path fill="#e0eafc" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#bfa8f8"/></svg>
+    <svg class="butterfly b4" viewBox="0 0 64 64"><path fill="#bfa8f8" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#e0eafc"/></svg>
+
+    <div class="main-card">
+        <h3>Products You Supply</h3>
         {% if products %}
-        <table class="table table-bordered table-striped bg-white">
-            <thead class="table-primary">
-                <tr>
-                    <th>Product ID</th>
-                    <th>Product Name</th>
-                    <th>Category</th>
-                    <th>Unit Price</th>
-                    <th>Quantity</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for product in products %}
-                <tr>
-                    <td>{{ product[0] }}</td>
-                    <td>{{ product[1] }}</td>
-                    <td>{{ product[3] }}</td>
-                    <td>₹{{ product[4] }}</td>
-                    <td>{{ product[5] }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Unit Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in products %}
+                    <tr>
+                        <td>{{ product[0] }}</td>
+                        <td>{{ product[1] }}</td>
+                        <td>{{ product[3] }}</td>
+                        <td>₹{{ product[4] }}</td>
+                        <td>{{ product[5] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
         {% else %}
-        <div class="alert alert-warning text-center">You have not added any products yet.</div>
+        <div class="alert alert-warning text-center mt-4">You have not added any products yet.</div>
         {% endif %}
         <div class="text-center mt-4">
             <a href="{{ url_for('add_product_by_supplier') }}" class="btn btn-success">Add New Product</a>
