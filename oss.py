@@ -31,20 +31,24 @@ def get_db_connection():
 @app.route('/', methods=['GET', 'POST'])
 def login_customer():
     if request.method == 'POST':
-        customer_id = request.form['CustomerID']
-        customer_name = request.form['CustomerName']
+        username = request.form['Username']
+        password = request.form['Password']
         conn = get_db_connection()
         cursor = conn.cursor()
-        cursor.execute("SELECT * FROM Customers WHERE CustomerID=%s AND CustomerName=%s", (customer_id, customer_name))
+        cursor.execute("""
+            SELECT CustomerID FROM Customers
+            WHERE Username = %s AND Password = crypt(%s, Password)
+        """, (username, password))
         user = cursor.fetchone()
         cursor.close()
         conn.close()
         if user:
-            session['customer_id'] = customer_id
+            session['customer_id'] = user[0]
             return redirect(url_for('products'))
         else:
-            return "Invalid customer credentials"
+            return "Invalid credentials"
     return render_template('login_customer.html')
+
 
 @app.route('/add_customer', methods=['GET', 'POST'])
 def add_customer():
@@ -52,6 +56,8 @@ def add_customer():
         data = (
             request.form['CustomerID'],
             request.form['CustomerName'],
+            request.form['Username'],
+            request.form['Password'],
             request.form['PhoneNumber'],
             request.form['Email'],
             request.form['Address']
@@ -59,8 +65,9 @@ def add_customer():
         conn = get_db_connection()
         cursor = conn.cursor()
         cursor.execute("""
-            INSERT INTO Customers (CustomerID, CustomerName, PhoneNumber, Email, Address)
-            VALUES (%s, %s, %s, %s, %s)
+            INSERT INTO Customers 
+            (CustomerID, CustomerName, Username, Password, PhoneNumber, Email, Address)
+            VALUES (%s, %s, %s, crypt(%s, gen_salt('bf')), %s, %s, %s)
         """, data)
         conn.commit()
         cursor.close()
@@ -68,32 +75,28 @@ def add_customer():
         return redirect(url_for('login_customer'))
     return render_template('add_customer.html')
 
+
 @app.route('/login_supplier', methods=['GET', 'POST'])
 def login_supplier():
     if request.method == 'POST':
-        try:
-            supplier_id = int(request.form['SupplierID'])
-            supplier_name = request.form['SupplierName'].strip().lower()
-        except ValueError:
-            return "Invalid Supplier ID format"
-
-        connection = get_db_connection()
-        cursor = connection.cursor()
+        username = request.form['Username']
+        password = request.form['Password']
+        conn = get_db_connection()
+        cursor = conn.cursor()
         cursor.execute("""
-            SELECT * FROM Suppliers 
-            WHERE SupplierID = %s AND LOWER(TRIM(SupplierName)) = %s
-        """, (supplier_id, supplier_name))
+            SELECT SupplierID FROM Suppliers
+            WHERE Username = %s AND Password = crypt(%s, Password)
+        """, (username, password))
         supplier = cursor.fetchone()
         cursor.close()
-        connection.close()
-
+        conn.close()
         if supplier:
-            session['supplier_id'] = supplier_id
+            session['supplier_id'] = supplier[0]
             return redirect(url_for('supplier_products'))
         else:
-            return redirect(url_for('add_supplier'))
-
+            return "Invalid supplier credentials"
     return render_template('login_supplier.html')
+
 
 @app.route('/add_supplier', methods=['GET', 'POST'])
 def add_supplier():
@@ -101,6 +104,8 @@ def add_supplier():
         data = (
             request.form['SupplierID'],
             request.form['SupplierName'],
+            request.form['Username'],
+            request.form['Password'],
             request.form['PhoneNumber'],
             request.form['Email'],
             request.form['Address']
@@ -108,8 +113,9 @@ def add_supplier():
         conn = get_db_connection()
         cursor = conn.cursor()
         cursor.execute("""
-            INSERT INTO Suppliers (SupplierID, SupplierName, PhoneNumber, Email, Address)
-            VALUES (%s, %s, %s, %s, %s)
+            INSERT INTO Suppliers 
+            (SupplierID, SupplierName, Username, Password, PhoneNumber, Email, Address)
+            VALUES (%s, %s, %s, crypt(%s, gen_salt('bf')), %s, %s, %s)
         """, data)
         conn.commit()
         cursor.close()
@@ -117,6 +123,7 @@ def add_supplier():
         session['supplier_id'] = data[0]
         return redirect(url_for('add_product_by_supplier'))
     return render_template('add_supplier.html')
+
 
 @app.route('/products')
 def products():
@@ -138,15 +145,16 @@ def buy_product(product_id):
     conn = get_db_connection()
     cursor = conn.cursor()
     cursor.execute("""
-        INSERT INTO Orders (OrderID, CustomerID, ProductID, Order_Date, Status)
-        VALUES (%s, %s, %s, %s, %s)
-    """, (order_id, session['customer_id'], product_id, datetime.now(), 'Pending'))
+        INSERT INTO Orders (OrderID, CustomerID, ProductID, Order_Date)
+        VALUES (%s, %s, %s, %s)
+    """, (order_id, session['customer_id'], product_id, datetime.now()))
     cursor.execute("SELECT * FROM Products WHERE ProductID = %s", (product_id,))
     product = cursor.fetchone()
     conn.commit()
     cursor.close()
     conn.close()
     return render_template('order_confirmation.html', product=product)
+
 
 @app.route('/supplier_products')
 def supplier_products():
@@ -191,12 +199,18 @@ def view_records(record_type):
     cursor = conn.cursor()
 
     if record_type == 'customers':
-        cursor.execute("SELECT * FROM Customers")
+        cursor.execute("""
+            SELECT CustomerID, CustomerName, PhoneNumber, Email, Address
+            FROM Customers
+        """)
         records = cursor.fetchall()
         headers = ['CustomerID', 'CustomerName', 'PhoneNumber', 'Email', 'Address']
 
     elif record_type == 'suppliers':
-        cursor.execute("SELECT * FROM Suppliers")
+        cursor.execute("""
+            SELECT SupplierID, SupplierName, PhoneNumber, Email, Address
+            FROM Suppliers
+        """)
         records = cursor.fetchall()
         headers = ['SupplierID', 'SupplierName', 'PhoneNumber', 'Email', 'Address']
 
