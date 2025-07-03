@@ -5,23 +5,18 @@
   <title>Customer Registration</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    html, body {
-      height: 100%;
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       margin: 0;
-      padding: 0;
       background: linear-gradient(135deg, #f8fafc 0%, #e0eafc 100%);
       font-family: 'Segoe UI', sans-serif;
+      position: relative;
       overflow-x: hidden;
     }
-    body {
-      min-height: 100vh;
-      width: 100vw;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-    /* Butterfly SVGs as background */
+
     .butterfly {
       position: absolute;
       z-index: 0;
@@ -29,153 +24,139 @@
       pointer-events: none;
       animation: float 10s infinite linear alternate;
     }
-    .butterfly.b1 {
-      top: 6%;
-      left: 10%;
-      width: 140px;
-      transform: rotate(-12deg);
-      animation-delay: 0s;
-    }
-    .butterfly.b2 {
-      top: 13%;
-      right: 12%;
-      width: 110px;
-      transform: rotate(18deg);
-      animation-delay: 2s;
-    }
-    .butterfly.b3 {
-      bottom: 10%;
-      left: 16%;
-      width: 90px;
-      transform: rotate(-8deg);
-      animation-delay: 1s;
-    }
-    .butterfly.b4 {
-      bottom: 12%;
-      right: 14%;
-      width: 140px;
-      transform: rotate(8deg);
-      animation-delay: 3s;
-    }
+
+    .butterfly.b1 { top: 6%; left: 10%; width: 140px; transform: rotate(-12deg); animation-delay: 0s; }
+    .butterfly.b2 { top: 13%; right: 12%; width: 110px; transform: rotate(18deg); animation-delay: 2s; }
+    .butterfly.b3 { bottom: 10%; left: 16%; width: 90px; transform: rotate(-8deg); animation-delay: 1s; }
+    .butterfly.b4 { bottom: 12%; right: 14%; width: 140px; transform: rotate(8deg); animation-delay: 3s; }
+
     @keyframes float {
       0% { transform: translateY(0) scale(1) rotate(0); }
       100% { transform: translateY(-30px) scale(1.05) rotate(6deg); }
     }
 
-    .register-card {
-      position: relative;
+    .container {
       z-index: 1;
-      background: rgba(255,255,255,0.97);
-      padding: 3.5rem 3rem;
-      border-radius: 2rem;
-      box-shadow: 0 12px 40px 0 rgba(173, 216, 230, 0.16);
-      max-width: 540px;
-      width: 100%;
-      margin: 0 auto;
-      border: 2px solid #e0eafc;
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(173, 216, 230, 0.16);
+      width: 700px;
+      max-width: 95vw;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #7b5eb4;
+      font-weight: bold;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .form-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form-group {
       display: flex;
       flex-direction: column;
     }
-    .register-card h3 {
-      font-weight: 700;
-      color: #7b5eb4;
-      margin-bottom: 2.2rem;
-      letter-spacing: 1px;
-      font-size: 2.1rem;
-      text-shadow: 0 2px 8px #e0eafc;
+
+    label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #6a5acd;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #f6f2ff;
+    }
+
+    .form-actions {
+      margin-top: 30px;
       text-align: center;
     }
-    .form-label {
-      font-weight: 500;
-      color: #8a73c7;
-      font-size: 1.07rem;
-    }
-    .form-control {
-      background: #f6f2ff;
-      border: 1px solid #e0eafc;
-      border-radius: 0.9rem;
-      padding: 1rem;
-      font-size: 1.13rem;
-      transition: border-color 0.2s;
-      box-shadow: 0 1px 6px #e0eafc40;
-    }
-    .form-control:focus {
-      border-color: #bfa8f8;
-      box-shadow: 0 0 0 2px #bfa8f855;
-      background: #fff;
-    }
-    .btn-success {
-      padding: 0.75rem 2.5rem;
-      font-size: 1.22rem;
-      border-radius: 2rem;
-      background: linear-gradient(90deg, #bfa8f8 0%, #f7d6e0 100%);
+
+    button {
+      padding: 10px 30px;
+      font-size: 1.1rem;
+      border-radius: 30px;
       border: none;
-      color: #fff;
+      background: linear-gradient(90deg, #bfa8f8, #f7d6e0);
+      color: white;
       font-weight: 600;
-      box-shadow: 0 2px 8px #bfa8f855;
-      transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+      transition: 0.3s;
     }
-    .btn-success:hover, .btn-success:focus {
-      background: linear-gradient(90deg, #f7d6e0 0%, #bfa8f8 100%);
+
+    button:hover {
+      background: linear-gradient(90deg, #f7d6e0, #bfa8f8);
       color: #7b5eb4;
-      box-shadow: 0 4px 14px #bfa8f855;
     }
+
     @media (max-width: 700px) {
-      .register-card {
-        padding: 2.2rem 1rem;
-        max-width: 95vw;
-      }
-      .register-card h3 {
-        font-size: 1.3rem;
-      }
-      .butterfly {
-        display: none;
+      .form-row {
+        flex-direction: column;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Butterfly SVGs as decorative background -->
+  <!-- Butterfly Background -->
   <svg class="butterfly b1" viewBox="0 0 64 64"><path fill="#bfa8f8" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#f7d6e0"/></svg>
   <svg class="butterfly b2" viewBox="0 0 64 64"><path fill="#f7d6e0" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#bfa8f8"/></svg>
   <svg class="butterfly b3" viewBox="0 0 64 64"><path fill="#e0eafc" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#bfa8f8"/></svg>
   <svg class="butterfly b4" viewBox="0 0 64 64"><path fill="#bfa8f8" d="M32 36c-8 10-24 8-24-2s12-18 24-18 24 8 24 18-16 12-24 2z"/><ellipse cx="32" cy="36" rx="6" ry="8" fill="#e0eafc"/></svg>
 
-  <div class="register-card">
-    <h3>Customer Registration</h3>
+  <div class="container">
+    <h2>Customer Registration</h2>
     <form method="POST">
-      <div class="mb-3">
-        <label class="form-label">Customer ID</label>
-        <input type="text" class="form-control" name="CustomerID" required>
+      <div class="form-row">
+        <div class="form-col">
+          <div class="form-group">
+            <label for="customer_id">Customer ID</label>
+            <input type="text" id="customer_id" name="customer_id" required>
+          </div>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" required>
+          </div>
+        </div>
+        <div class="form-col">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
       </div>
-      <div class="mb-3">
-        <label class="form-label">Name</label>
-        <input type="text" class="form-control" name="CustomerName" required>
+      <div class="form-group" style="margin-top: 15px;">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="2" required></textarea>
       </div>
-      <div class="mb-3">
-        <label class="form-label">Username</label>
-        <input type="text" class="form-control" name="Username" required>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Password</label>
-        <input type="password" class="form-control" name="Password" required>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Phone</label>
-        <input type="text" class="form-control" name="PhoneNumber">
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="email" class="form-control" name="Email">
-      </div>
-      <div class="mb-4">
-        <label class="form-label">Address</label>
-        <textarea class="form-control" name="Address"></textarea>
-      </div>
-      <div class="text-center">
-        <button type="submit" class="btn btn-success">Register</button>
-      </div>
-      <div>
+      <div class="form-actions">
+        <button type="submit">Register</button>
       </div>
     </form>
   </div>
