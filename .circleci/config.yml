@@ -17,7 +17,7 @@ jobs:
       - run:
           name: 🚀 Trigger Render Deployment
           command: |
-            curl -X POST "https://api.render.com/deploy/srv-xxxxxxx?key=dc2XbOXGkfE"
+            curl -X POST "https://api.render.com/deploy/srv-d1g3iv6mcj7s73cbbpbg?key=dc2XbOXGkfE"
       - run:
           name: 📣 Notify Sleuth of Deployment
           command: |

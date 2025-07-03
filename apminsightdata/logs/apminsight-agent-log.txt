@@ -1096,3 +1096,657 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-07-01 14:56:33,377 11492 INFO CPU Utilization for process with PID 11492: 0.3%
 2025-07-01 14:57:33,378 11492 INFO CPU Utilization for process with PID 11492: 0.3%
 2025-07-01 14:57:33,378 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 14:58:33,380 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 14:58:33,380 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 14:59:33,381 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 14:59:33,381 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:00:33,382 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:00:33,382 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:01:33,384 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:01:33,384 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:02:33,385 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:02:33,385 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:03:33,386 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:03:33,386 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:04:33,387 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 15:04:33,387 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 15:05:33,388 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:05:33,388 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:06:33,390 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:06:33,390 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:07:33,391 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:07:33,391 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:08:33,393 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 15:08:33,393 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 15:09:33,395 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:09:33,395 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:10:33,399 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:10:33,399 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:11:33,400 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:11:33,400 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:12:33,402 11492 INFO CPU Utilization for process with PID 11492: 0.4%
+2025-07-01 15:12:33,402 11492 INFO CPU Utilization for process with PID 11492: 0.4%
+2025-07-01 15:13:33,404 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:13:33,404 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:14:33,406 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 15:14:33,406 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 15:15:33,407 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:15:33,407 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:16:33,408 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:16:33,408 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:17:33,409 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:17:33,409 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:18:33,410 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:18:33,410 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:19:33,412 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:19:33,412 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:35:56,832 11492 INFO CPU Utilization for process with PID 11492: 0.0%
+2025-07-01 15:35:56,832 11492 INFO CPU Utilization for process with PID 11492: 0.0%
+2025-07-01 15:36:56,837 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:36:56,837 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:37:56,839 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 15:37:56,839 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 15:38:56,840 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:38:56,840 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 15:48:27,822 11492 INFO CPU Utilization for process with PID 11492: 0.025%
+2025-07-01 15:48:27,822 11492 INFO CPU Utilization for process with PID 11492: 0.025%
+2025-07-01 15:49:27,824 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:49:27,824 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:50:27,825 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 15:50:27,825 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 15:51:27,827 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:51:27,827 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:52:27,828 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:52:27,828 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:53:27,830 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:53:27,830 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:54:27,832 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:54:27,832 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:55:27,834 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 15:55:27,834 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 15:56:27,835 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:56:27,835 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 15:57:27,836 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 15:57:27,836 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 15:58:27,837 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 15:58:27,837 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 15:59:27,839 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:59:27,839 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 15:59:50,904 11492 INFO Recieved the instance and threshold info from DataExporter successfully
+2025-07-01 15:59:50,904 11492 INFO Recieved the instance and threshold info from DataExporter successfully
+2025-07-01 15:59:50,945 11492 INFO Successfully constructed tansaction payload
+2025-07-01 15:59:50,945 11492 INFO Successfully constructed tansaction payload
+2025-07-01 15:59:50,945 11492 INFO Successfully pushed data to Dispatcher queue
+2025-07-01 15:59:50,945 11492 INFO Successfully pushed data to Dispatcher queue
+2025-07-01 16:00:27,842 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 16:00:27,842 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 16:01:27,844 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 16:01:27,844 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 16:02:27,845 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 16:02:27,845 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 16:03:27,846 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 16:03:27,846 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 16:04:27,848 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 16:04:27,848 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 16:05:27,850 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 16:05:27,850 11492 INFO CPU Utilization for process with PID 11492: 0.375%
+2025-07-01 16:06:27,851 11492 INFO CPU Utilization for process with PID 11492: 0.4%
+2025-07-01 16:06:27,851 11492 INFO CPU Utilization for process with PID 11492: 0.4%
+2025-07-01 16:13:30,016 11492 INFO CPU Utilization for process with PID 11492: 0.025%
+2025-07-01 16:13:30,016 11492 INFO CPU Utilization for process with PID 11492: 0.025%
+2025-07-01 16:14:30,021 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:14:30,021 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:15:30,022 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:15:30,022 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:16:30,023 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:16:30,023 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:17:30,025 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:17:30,025 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:18:30,026 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 16:18:30,026 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 16:19:30,027 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:19:30,027 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:20:30,028 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 16:20:30,028 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 16:21:30,029 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 16:21:30,029 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 16:21:57,962 20152 INFO http.client instrumented
+2025-07-01 16:21:57,962 20152 INFO http.client instrumented
+2025-07-01 16:21:57,962 20152 INFO urllib.request instrumented
+2025-07-01 16:21:57,962 20152 INFO urllib.request instrumented
+2025-07-01 16:21:57,964 20152 INFO concurrent.futures instrumented
+2025-07-01 16:21:57,964 20152 INFO concurrent.futures instrumented
+2025-07-01 16:21:57,965 20152 INFO django.core.handlers.asgi is not present
+2025-07-01 16:21:57,965 20152 INFO django.core.handlers.asgi is not present
+2025-07-01 16:21:57,965 20152 INFO django.core.handlers.wsgi is not present
+2025-07-01 16:21:57,965 20152 INFO django.core.handlers.wsgi is not present
+2025-07-01 16:21:57,965 20152 INFO django.core.handlers.base is not present
+2025-07-01 16:21:57,965 20152 INFO django.core.handlers.base is not present
+2025-07-01 16:21:57,965 20152 INFO django.conf.urls is not present
+2025-07-01 16:21:57,965 20152 INFO django.conf.urls is not present
+2025-07-01 16:21:57,965 20152 INFO django.urls is not present
+2025-07-01 16:21:57,965 20152 INFO django.urls is not present
+2025-07-01 16:21:57,966 20152 INFO django.template is not present
+2025-07-01 16:21:57,966 20152 INFO django.template is not present
+2025-07-01 16:21:57,966 20152 INFO django.core.wsgi is not present
+2025-07-01 16:21:57,966 20152 INFO django.core.wsgi is not present
+2025-07-01 16:21:57,966 20152 INFO django.core.asgi is not present
+2025-07-01 16:21:57,966 20152 INFO django.core.asgi is not present
+2025-07-01 16:21:57,975 20152 INFO sqlite3 instrumented
+2025-07-01 16:21:57,975 20152 INFO sqlite3 instrumented
+2025-07-01 16:21:57,975 20152 INFO sqlite3.dbapi2 instrumented
+2025-07-01 16:21:57,975 20152 INFO sqlite3.dbapi2 instrumented
+2025-07-01 16:21:57,976 20152 INFO pymysql is not present
+2025-07-01 16:21:57,976 20152 INFO pymysql is not present
+2025-07-01 16:21:57,976 20152 INFO MySQLdb.connections is not present
+2025-07-01 16:21:57,976 20152 INFO MySQLdb.connections is not present
+2025-07-01 16:21:58,122 20152 INFO flask instrumented
+2025-07-01 16:21:58,122 20152 INFO flask instrumented
+2025-07-01 16:21:58,123 20152 INFO redis.client is not present
+2025-07-01 16:21:58,123 20152 INFO redis.client is not present
+2025-07-01 16:21:58,123 20152 INFO redis.connection is not present
+2025-07-01 16:21:58,123 20152 INFO redis.connection is not present
+2025-07-01 16:21:58,123 20152 INFO redis.asyncio.client is not present
+2025-07-01 16:21:58,123 20152 INFO redis.asyncio.client is not present
+2025-07-01 16:21:58,123 20152 INFO jinja2.environment instrumented
+2025-07-01 16:21:58,123 20152 INFO jinja2.environment instrumented
+2025-07-01 16:21:58,123 20152 INFO pymemcache.client.base is not present
+2025-07-01 16:21:58,123 20152 INFO pymemcache.client.base is not present
+2025-07-01 16:21:58,134 20152 INFO psycopg2 instrumented
+2025-07-01 16:21:58,134 20152 INFO psycopg2 instrumented
+2025-07-01 16:21:58,134 20152 INFO psycopg2.extensions instrumented
+2025-07-01 16:21:58,134 20152 INFO psycopg2.extensions instrumented
+2025-07-01 16:21:58,134 20152 INFO psycopg2._psycopg instrumented
+2025-07-01 16:21:58,134 20152 INFO psycopg2._psycopg instrumented
+2025-07-01 16:21:58,134 20152 INFO psycopg2._json instrumented
+2025-07-01 16:21:58,134 20152 INFO psycopg2._json instrumented
+2025-07-01 16:21:58,135 20152 INFO cassandra.cluster is not present
+2025-07-01 16:21:58,135 20152 INFO cassandra.cluster is not present
+2025-07-01 16:21:58,135 20152 INFO memcache is not present
+2025-07-01 16:21:58,135 20152 INFO memcache is not present
+2025-07-01 16:21:58,135 20152 INFO bottle is not present
+2025-07-01 16:21:58,135 20152 INFO bottle is not present
+2025-07-01 16:21:58,135 20152 INFO cherrypy._cptree is not present
+2025-07-01 16:21:58,135 20152 INFO cherrypy._cptree is not present
+2025-07-01 16:21:58,135 20152 INFO cherrypy._cpwsgi is not present
+2025-07-01 16:21:58,135 20152 INFO cherrypy._cpwsgi is not present
+2025-07-01 16:21:58,136 20152 INFO cherrypy._cprequest is not present
+2025-07-01 16:21:58,136 20152 INFO cherrypy._cprequest is not present
+2025-07-01 16:21:58,136 20152 INFO cherrypy._cpdispatch is not present
+2025-07-01 16:21:58,136 20152 INFO cherrypy._cpdispatch is not present
+2025-07-01 16:21:58,136 20152 INFO pyramid.router is not present
+2025-07-01 16:21:58,136 20152 INFO pyramid.router is not present
+2025-07-01 16:21:58,136 20152 INFO pyramid.config is not present
+2025-07-01 16:21:58,136 20152 INFO pyramid.config is not present
+2025-07-01 16:21:58,136 20152 INFO pyramid.config.views is not present
+2025-07-01 16:21:58,136 20152 INFO pyramid.config.views is not present
+2025-07-01 16:21:58,137 20152 INFO pyramid.renderers is not present
+2025-07-01 16:21:58,137 20152 INFO pyramid.renderers is not present
+2025-07-01 16:21:58,137 20152 INFO pyramid.httpexceptions is not present
+2025-07-01 16:21:58,137 20152 INFO pyramid.httpexceptions is not present
+2025-07-01 16:21:58,137 20152 INFO mako.template is not present
+2025-07-01 16:21:58,137 20152 INFO mako.template is not present
+2025-07-01 16:21:58,137 20152 INFO genshi.template is not present
+2025-07-01 16:21:58,137 20152 INFO genshi.template is not present
+2025-07-01 16:21:58,137 20152 INFO genshi is not present
+2025-07-01 16:21:58,137 20152 INFO genshi is not present
+2025-07-01 16:21:58,137 20152 INFO httpx._client is not present
+2025-07-01 16:21:58,137 20152 INFO httpx._client is not present
+2025-07-01 16:21:58,138 20152 INFO httplib2 is not present
+2025-07-01 16:21:58,138 20152 INFO httplib2 is not present
+2025-07-01 16:21:58,138 20152 INFO urllib3.connectionpool is not present
+2025-07-01 16:21:58,138 20152 INFO urllib3.connectionpool is not present
+2025-07-01 16:21:58,138 20152 INFO asyncpg is not present
+2025-07-01 16:21:58,138 20152 INFO asyncpg is not present
+2025-07-01 16:21:58,138 20152 INFO aiomysql.cursors is not present
+2025-07-01 16:21:58,138 20152 INFO aiomysql.cursors is not present
+2025-07-01 16:21:58,138 20152 INFO aioredis.client is not present
+2025-07-01 16:21:58,138 20152 INFO aioredis.client is not present
+2025-07-01 16:21:58,139 20152 INFO aredis.client is not present
+2025-07-01 16:21:58,139 20152 INFO aredis.client is not present
+2025-07-01 16:21:58,139 20152 INFO pymongo.mongo_client is not present
+2025-07-01 16:21:58,139 20152 INFO pymongo.mongo_client is not present
+2025-07-01 16:21:58,139 20152 INFO pymongo.topology is not present
+2025-07-01 16:21:58,139 20152 INFO pymongo.topology is not present
+2025-07-01 16:21:58,139 20152 INFO pymongo.database is not present
+2025-07-01 16:21:58,139 20152 INFO pymongo.database is not present
+2025-07-01 16:21:58,139 20152 INFO pymongo.collection is not present
+2025-07-01 16:21:58,139 20152 INFO pymongo.collection is not present
+2025-07-01 16:21:58,140 20152 INFO starlette.concurrency is not present
+2025-07-01 16:21:58,140 20152 INFO starlette.concurrency is not present
+2025-07-01 16:21:58,140 20152 INFO starlette.applications is not present
+2025-07-01 16:21:58,140 20152 INFO starlette.applications is not present
+2025-07-01 16:21:58,140 20152 INFO starlette.routing is not present
+2025-07-01 16:21:58,140 20152 INFO starlette.routing is not present
+2025-07-01 16:21:58,141 20152 INFO starlette.middleware.exceptions is not present
+2025-07-01 16:21:58,141 20152 INFO starlette.middleware.exceptions is not present
+2025-07-01 16:21:58,141 20152 INFO starlette.exceptions is not present
+2025-07-01 16:21:58,141 20152 INFO starlette.exceptions is not present
+2025-07-01 16:21:58,141 20152 INFO starlette.middleware.errors is not present
+2025-07-01 16:21:58,141 20152 INFO starlette.middleware.errors is not present
+2025-07-01 16:21:58,141 20152 INFO starlette.background is not present
+2025-07-01 16:21:58,141 20152 INFO starlette.background is not present
+2025-07-01 16:21:58,141 20152 INFO starlette.responses is not present
+2025-07-01 16:21:58,141 20152 INFO starlette.responses is not present
+2025-07-01 16:21:58,142 20152 INFO fastapi.applications is not present
+2025-07-01 16:21:58,142 20152 INFO fastapi.applications is not present
+2025-07-01 16:21:58,142 20152 INFO fastapi.routing is not present
+2025-07-01 16:21:58,142 20152 INFO fastapi.routing is not present
+2025-07-01 16:21:58,142 20152 INFO cx_Oracle is not present
+2025-07-01 16:21:58,142 20152 INFO cx_Oracle is not present
+2025-07-01 16:21:58,142 20152 INFO oracledb is not present
+2025-07-01 16:21:58,142 20152 INFO oracledb is not present
+2025-07-01 16:21:58,142 20152 INFO pymssql is not present
+2025-07-01 16:21:58,142 20152 INFO pymssql is not present
+2025-07-01 16:21:58,143 20152 INFO pyodbc is not present
+2025-07-01 16:21:58,143 20152 INFO pyodbc is not present
+2025-07-01 16:21:58,143 20152 INFO streamlit.runtime.scriptrunner.script_runner is not present
+2025-07-01 16:21:58,143 20152 INFO streamlit.runtime.scriptrunner.script_runner is not present
+2025-07-01 16:21:58,143 20152 INFO tornado.httpserver is not present
+2025-07-01 16:21:58,143 20152 INFO tornado.httpserver is not present
+2025-07-01 16:21:58,143 20152 INFO tornado.routing is not present
+2025-07-01 16:21:58,143 20152 INFO tornado.routing is not present
+2025-07-01 16:21:58,143 20152 INFO async_cron.job is not present
+2025-07-01 16:21:58,143 20152 INFO async_cron.job is not present
+2025-07-01 16:21:58,144 20152 INFO celery.app.trace is not present
+2025-07-01 16:21:58,144 20152 INFO celery.app.trace is not present
+2025-07-01 16:21:58,144 20152 INFO celery.app.task is not present
+2025-07-01 16:21:58,144 20152 INFO celery.app.task is not present
+2025-07-01 16:21:58,144 20152 INFO gunicorn.workers.sync is not present
+2025-07-01 16:21:58,144 20152 INFO gunicorn.workers.sync is not present
+2025-07-01 16:21:58,144 20152 INFO gunicorn.http.wsgi is not present
+2025-07-01 16:21:58,144 20152 INFO gunicorn.http.wsgi is not present
+2025-07-01 16:21:58,145 20152 INFO waitress.task is not present
+2025-07-01 16:21:58,145 20152 INFO waitress.task is not present
+2025-07-01 16:21:58,145 20152 INFO cheroot.server is not present
+2025-07-01 16:21:58,145 20152 INFO cheroot.server is not present
+2025-07-01 16:21:58,145 20152 INFO cheroot.wsgi is not present
+2025-07-01 16:21:58,145 20152 INFO cheroot.wsgi is not present
+2025-07-01 16:21:58,152 20152 INFO wsgiref.handlers instrumented
+2025-07-01 16:21:58,152 20152 INFO wsgiref.handlers instrumented
+2025-07-01 16:21:58,162 20152 INFO werkzeug.debug instrumented
+2025-07-01 16:21:58,162 20152 INFO werkzeug.debug instrumented
+2025-07-01 16:21:58,162 20152 INFO werkzeug.serving instrumented
+2025-07-01 16:21:58,162 20152 INFO werkzeug.serving instrumented
+2025-07-01 16:21:58,162 20152 INFO werkzeug.wrappers.response instrumented
+2025-07-01 16:21:58,162 20152 INFO werkzeug.wrappers.response instrumented
+2025-07-01 16:21:58,162 20152 INFO pika.channel is not present
+2025-07-01 16:21:58,162 20152 INFO pika.channel is not present
+2025-07-01 16:21:58,629 20152 INFO Agent not hosted in cloud environment
+2025-07-01 16:21:58,629 20152 INFO Agent not hosted in cloud environment
+2025-07-01 16:21:59,371 4180 INFO http.client instrumented
+2025-07-01 16:21:59,371 4180 INFO http.client instrumented
+2025-07-01 16:21:59,371 4180 INFO urllib.request instrumented
+2025-07-01 16:21:59,371 4180 INFO urllib.request instrumented
+2025-07-01 16:21:59,372 4180 INFO concurrent.futures instrumented
+2025-07-01 16:21:59,372 4180 INFO concurrent.futures instrumented
+2025-07-01 16:21:59,372 4180 INFO django.core.handlers.asgi is not present
+2025-07-01 16:21:59,372 4180 INFO django.core.handlers.asgi is not present
+2025-07-01 16:21:59,373 4180 INFO django.core.handlers.wsgi is not present
+2025-07-01 16:21:59,373 4180 INFO django.core.handlers.wsgi is not present
+2025-07-01 16:21:59,373 4180 INFO django.core.handlers.base is not present
+2025-07-01 16:21:59,373 4180 INFO django.core.handlers.base is not present
+2025-07-01 16:21:59,373 4180 INFO django.conf.urls is not present
+2025-07-01 16:21:59,373 4180 INFO django.conf.urls is not present
+2025-07-01 16:21:59,373 4180 INFO django.urls is not present
+2025-07-01 16:21:59,373 4180 INFO django.urls is not present
+2025-07-01 16:21:59,374 4180 INFO django.template is not present
+2025-07-01 16:21:59,374 4180 INFO django.template is not present
+2025-07-01 16:21:59,374 4180 INFO django.core.wsgi is not present
+2025-07-01 16:21:59,374 4180 INFO django.core.wsgi is not present
+2025-07-01 16:21:59,374 4180 INFO django.core.asgi is not present
+2025-07-01 16:21:59,374 4180 INFO django.core.asgi is not present
+2025-07-01 16:21:59,377 4180 INFO sqlite3 instrumented
+2025-07-01 16:21:59,377 4180 INFO sqlite3 instrumented
+2025-07-01 16:21:59,377 4180 INFO sqlite3.dbapi2 instrumented
+2025-07-01 16:21:59,377 4180 INFO sqlite3.dbapi2 instrumented
+2025-07-01 16:21:59,378 4180 INFO pymysql is not present
+2025-07-01 16:21:59,378 4180 INFO pymysql is not present
+2025-07-01 16:21:59,379 4180 INFO MySQLdb.connections is not present
+2025-07-01 16:21:59,379 4180 INFO MySQLdb.connections is not present
+2025-07-01 16:21:59,525 4180 INFO flask instrumented
+2025-07-01 16:21:59,525 4180 INFO flask instrumented
+2025-07-01 16:21:59,526 4180 INFO redis.client is not present
+2025-07-01 16:21:59,526 4180 INFO redis.client is not present
+2025-07-01 16:21:59,526 4180 INFO redis.connection is not present
+2025-07-01 16:21:59,526 4180 INFO redis.connection is not present
+2025-07-01 16:21:59,526 4180 INFO redis.asyncio.client is not present
+2025-07-01 16:21:59,526 4180 INFO redis.asyncio.client is not present
+2025-07-01 16:21:59,526 4180 INFO jinja2.environment instrumented
+2025-07-01 16:21:59,526 4180 INFO jinja2.environment instrumented
+2025-07-01 16:21:59,526 4180 INFO pymemcache.client.base is not present
+2025-07-01 16:21:59,526 4180 INFO pymemcache.client.base is not present
+2025-07-01 16:21:59,536 4180 INFO psycopg2 instrumented
+2025-07-01 16:21:59,536 4180 INFO psycopg2 instrumented
+2025-07-01 16:21:59,536 4180 INFO psycopg2.extensions instrumented
+2025-07-01 16:21:59,536 4180 INFO psycopg2.extensions instrumented
+2025-07-01 16:21:59,536 4180 INFO psycopg2._psycopg instrumented
+2025-07-01 16:21:59,536 4180 INFO psycopg2._psycopg instrumented
+2025-07-01 16:21:59,536 4180 INFO psycopg2._json instrumented
+2025-07-01 16:21:59,536 4180 INFO psycopg2._json instrumented
+2025-07-01 16:21:59,537 4180 INFO cassandra.cluster is not present
+2025-07-01 16:21:59,537 4180 INFO cassandra.cluster is not present
+2025-07-01 16:21:59,537 4180 INFO memcache is not present
+2025-07-01 16:21:59,537 4180 INFO memcache is not present
+2025-07-01 16:21:59,537 4180 INFO bottle is not present
+2025-07-01 16:21:59,537 4180 INFO bottle is not present
+2025-07-01 16:21:59,538 4180 INFO cherrypy._cptree is not present
+2025-07-01 16:21:59,538 4180 INFO cherrypy._cptree is not present
+2025-07-01 16:21:59,538 4180 INFO cherrypy._cpwsgi is not present
+2025-07-01 16:21:59,538 4180 INFO cherrypy._cpwsgi is not present
+2025-07-01 16:21:59,538 4180 INFO cherrypy._cprequest is not present
+2025-07-01 16:21:59,538 4180 INFO cherrypy._cprequest is not present
+2025-07-01 16:21:59,538 4180 INFO cherrypy._cpdispatch is not present
+2025-07-01 16:21:59,538 4180 INFO cherrypy._cpdispatch is not present
+2025-07-01 16:21:59,539 4180 INFO pyramid.router is not present
+2025-07-01 16:21:59,539 4180 INFO pyramid.router is not present
+2025-07-01 16:21:59,539 4180 INFO pyramid.config is not present
+2025-07-01 16:21:59,539 4180 INFO pyramid.config is not present
+2025-07-01 16:21:59,539 4180 INFO pyramid.config.views is not present
+2025-07-01 16:21:59,539 4180 INFO pyramid.config.views is not present
+2025-07-01 16:21:59,539 4180 INFO pyramid.renderers is not present
+2025-07-01 16:21:59,539 4180 INFO pyramid.renderers is not present
+2025-07-01 16:21:59,539 4180 INFO pyramid.httpexceptions is not present
+2025-07-01 16:21:59,539 4180 INFO pyramid.httpexceptions is not present
+2025-07-01 16:21:59,539 4180 INFO mako.template is not present
+2025-07-01 16:21:59,539 4180 INFO mako.template is not present
+2025-07-01 16:21:59,540 4180 INFO genshi.template is not present
+2025-07-01 16:21:59,540 4180 INFO genshi.template is not present
+2025-07-01 16:21:59,540 4180 INFO genshi is not present
+2025-07-01 16:21:59,540 4180 INFO genshi is not present
+2025-07-01 16:21:59,540 4180 INFO httpx._client is not present
+2025-07-01 16:21:59,540 4180 INFO httpx._client is not present
+2025-07-01 16:21:59,540 4180 INFO httplib2 is not present
+2025-07-01 16:21:59,540 4180 INFO httplib2 is not present
+2025-07-01 16:21:59,540 4180 INFO urllib3.connectionpool is not present
+2025-07-01 16:21:59,540 4180 INFO urllib3.connectionpool is not present
+2025-07-01 16:21:59,541 4180 INFO asyncpg is not present
+2025-07-01 16:21:59,541 4180 INFO asyncpg is not present
+2025-07-01 16:21:59,541 4180 INFO aiomysql.cursors is not present
+2025-07-01 16:21:59,541 4180 INFO aiomysql.cursors is not present
+2025-07-01 16:21:59,541 4180 INFO aioredis.client is not present
+2025-07-01 16:21:59,541 4180 INFO aioredis.client is not present
+2025-07-01 16:21:59,541 4180 INFO aredis.client is not present
+2025-07-01 16:21:59,541 4180 INFO aredis.client is not present
+2025-07-01 16:21:59,541 4180 INFO pymongo.mongo_client is not present
+2025-07-01 16:21:59,541 4180 INFO pymongo.mongo_client is not present
+2025-07-01 16:21:59,541 4180 INFO pymongo.topology is not present
+2025-07-01 16:21:59,541 4180 INFO pymongo.topology is not present
+2025-07-01 16:21:59,542 4180 INFO pymongo.database is not present
+2025-07-01 16:21:59,542 4180 INFO pymongo.database is not present
+2025-07-01 16:21:59,542 4180 INFO pymongo.collection is not present
+2025-07-01 16:21:59,542 4180 INFO pymongo.collection is not present
+2025-07-01 16:21:59,542 4180 INFO starlette.concurrency is not present
+2025-07-01 16:21:59,542 4180 INFO starlette.concurrency is not present
+2025-07-01 16:21:59,542 4180 INFO starlette.applications is not present
+2025-07-01 16:21:59,542 4180 INFO starlette.applications is not present
+2025-07-01 16:21:59,542 4180 INFO starlette.routing is not present
+2025-07-01 16:21:59,542 4180 INFO starlette.routing is not present
+2025-07-01 16:21:59,543 4180 INFO starlette.middleware.exceptions is not present
+2025-07-01 16:21:59,543 4180 INFO starlette.middleware.exceptions is not present
+2025-07-01 16:21:59,543 4180 INFO starlette.exceptions is not present
+2025-07-01 16:21:59,543 4180 INFO starlette.exceptions is not present
+2025-07-01 16:21:59,543 4180 INFO starlette.middleware.errors is not present
+2025-07-01 16:21:59,543 4180 INFO starlette.middleware.errors is not present
+2025-07-01 16:21:59,543 4180 INFO starlette.background is not present
+2025-07-01 16:21:59,543 4180 INFO starlette.background is not present
+2025-07-01 16:21:59,543 4180 INFO starlette.responses is not present
+2025-07-01 16:21:59,543 4180 INFO starlette.responses is not present
+2025-07-01 16:21:59,544 4180 INFO fastapi.applications is not present
+2025-07-01 16:21:59,544 4180 INFO fastapi.applications is not present
+2025-07-01 16:21:59,544 4180 INFO fastapi.routing is not present
+2025-07-01 16:21:59,544 4180 INFO fastapi.routing is not present
+2025-07-01 16:21:59,544 4180 INFO cx_Oracle is not present
+2025-07-01 16:21:59,544 4180 INFO cx_Oracle is not present
+2025-07-01 16:21:59,544 4180 INFO oracledb is not present
+2025-07-01 16:21:59,544 4180 INFO oracledb is not present
+2025-07-01 16:21:59,544 4180 INFO pymssql is not present
+2025-07-01 16:21:59,544 4180 INFO pymssql is not present
+2025-07-01 16:21:59,544 4180 INFO pyodbc is not present
+2025-07-01 16:21:59,544 4180 INFO pyodbc is not present
+2025-07-01 16:21:59,545 4180 INFO streamlit.runtime.scriptrunner.script_runner is not present
+2025-07-01 16:21:59,545 4180 INFO streamlit.runtime.scriptrunner.script_runner is not present
+2025-07-01 16:21:59,545 4180 INFO tornado.httpserver is not present
+2025-07-01 16:21:59,545 4180 INFO tornado.httpserver is not present
+2025-07-01 16:21:59,545 4180 INFO tornado.routing is not present
+2025-07-01 16:21:59,545 4180 INFO tornado.routing is not present
+2025-07-01 16:21:59,545 4180 INFO async_cron.job is not present
+2025-07-01 16:21:59,545 4180 INFO async_cron.job is not present
+2025-07-01 16:21:59,545 4180 INFO celery.app.trace is not present
+2025-07-01 16:21:59,545 4180 INFO celery.app.trace is not present
+2025-07-01 16:21:59,546 4180 INFO celery.app.task is not present
+2025-07-01 16:21:59,546 4180 INFO celery.app.task is not present
+2025-07-01 16:21:59,546 4180 INFO gunicorn.workers.sync is not present
+2025-07-01 16:21:59,546 4180 INFO gunicorn.workers.sync is not present
+2025-07-01 16:21:59,546 4180 INFO gunicorn.http.wsgi is not present
+2025-07-01 16:21:59,546 4180 INFO gunicorn.http.wsgi is not present
+2025-07-01 16:21:59,546 4180 INFO waitress.task is not present
+2025-07-01 16:21:59,546 4180 INFO waitress.task is not present
+2025-07-01 16:21:59,546 4180 INFO cheroot.server is not present
+2025-07-01 16:21:59,546 4180 INFO cheroot.server is not present
+2025-07-01 16:21:59,546 4180 INFO cheroot.wsgi is not present
+2025-07-01 16:21:59,546 4180 INFO cheroot.wsgi is not present
+2025-07-01 16:21:59,550 4180 INFO wsgiref.handlers instrumented
+2025-07-01 16:21:59,550 4180 INFO wsgiref.handlers instrumented
+2025-07-01 16:21:59,561 4180 INFO werkzeug.debug instrumented
+2025-07-01 16:21:59,561 4180 INFO werkzeug.debug instrumented
+2025-07-01 16:21:59,561 4180 INFO werkzeug.serving instrumented
+2025-07-01 16:21:59,561 4180 INFO werkzeug.serving instrumented
+2025-07-01 16:21:59,561 4180 INFO werkzeug.wrappers.response instrumented
+2025-07-01 16:21:59,561 4180 INFO werkzeug.wrappers.response instrumented
+2025-07-01 16:21:59,562 4180 INFO pika.channel is not present
+2025-07-01 16:21:59,562 4180 INFO pika.channel is not present
+2025-07-01 16:21:59,617 4180 INFO Agent not hosted in cloud environment
+2025-07-01 16:21:59,617 4180 INFO Agent not hosted in cloud environment
+2025-07-01 16:22:08,504 11492 INFO Recieved the instance and threshold info from DataExporter successfully
+2025-07-01 16:22:08,504 11492 INFO Recieved the instance and threshold info from DataExporter successfully
+2025-07-01 16:22:08,587 11492 INFO Successfully constructed tansaction payload
+2025-07-01 16:22:08,587 11492 INFO Successfully constructed tansaction payload
+2025-07-01 16:22:08,588 11492 INFO Successfully pushed data to Dispatcher queue
+2025-07-01 16:22:08,588 11492 INFO Successfully pushed data to Dispatcher queue
+2025-07-01 16:22:12,618 11492 INFO Recieved the instance and threshold info from DataExporter successfully
+2025-07-01 16:22:12,618 11492 INFO Recieved the instance and threshold info from DataExporter successfully
+2025-07-01 16:22:12,682 11492 INFO Successfully constructed tansaction payload
+2025-07-01 16:22:12,682 11492 INFO Successfully constructed tansaction payload
+2025-07-01 16:22:12,683 11492 INFO Successfully pushed data to Dispatcher queue
+2025-07-01 16:22:12,683 11492 INFO Successfully pushed data to Dispatcher queue
+2025-07-01 16:22:15,167 11492 INFO Recieved the instance and threshold info from DataExporter successfully
+2025-07-01 16:22:15,167 11492 INFO Recieved the instance and threshold info from DataExporter successfully
+2025-07-01 16:22:15,234 11492 INFO Successfully constructed tansaction payload
+2025-07-01 16:22:15,234 11492 INFO Successfully constructed tansaction payload
+2025-07-01 16:22:15,235 11492 INFO Successfully pushed data to Dispatcher queue
+2025-07-01 16:22:15,235 11492 INFO Successfully pushed data to Dispatcher queue
+2025-07-01 16:22:30,032 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 16:22:30,032 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 16:23:30,034 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:23:30,034 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:24:30,036 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 16:24:30,036 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 16:25:30,037 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 16:25:30,037 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 16:26:30,038 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 16:26:30,038 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 16:27:30,039 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:27:30,039 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:28:30,041 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 16:28:30,041 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 16:29:30,042 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:29:30,042 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:30:30,043 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 16:30:30,043 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 16:31:30,044 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 16:31:30,044 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 16:32:30,045 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 16:32:30,045 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 16:33:30,047 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:33:30,047 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:34:30,048 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:34:30,048 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:35:30,049 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:35:30,049 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:36:30,050 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 16:36:30,050 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 16:37:30,052 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:37:30,052 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:38:30,053 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:38:30,053 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 16:39:30,054 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 16:39:30,054 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 16:40:30,056 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 16:40:30,056 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 16:59:19,408 11492 INFO CPU Utilization for process with PID 11492: 0.0%
+2025-07-01 16:59:19,408 11492 INFO CPU Utilization for process with PID 11492: 0.0%
+2025-07-01 17:00:19,426 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:00:19,426 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:01:19,435 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:01:19,435 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:02:19,438 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 17:02:19,438 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 17:03:19,442 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 17:03:19,442 11492 INFO CPU Utilization for process with PID 11492: 0.35%
+2025-07-01 17:04:19,504 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:04:19,504 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:05:19,505 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:05:19,505 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:06:19,506 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:06:19,506 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:07:19,507 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:07:19,507 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:08:19,508 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:08:19,508 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:09:19,510 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:09:19,510 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:10:19,511 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:10:19,511 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:11:19,512 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:11:19,512 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:12:19,513 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:12:19,513 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:13:19,514 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:13:19,514 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:14:19,516 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:14:19,516 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:15:19,517 11492 INFO CPU Utilization for process with PID 11492: 0.175%
+2025-07-01 17:15:19,517 11492 INFO CPU Utilization for process with PID 11492: 0.175%
+2025-07-01 17:16:19,519 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:16:19,519 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:17:19,520 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:17:19,520 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:18:19,521 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:18:19,521 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:19:19,522 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:19:19,522 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:20:19,523 11492 INFO CPU Utilization for process with PID 11492: 0.175%
+2025-07-01 17:20:19,523 11492 INFO CPU Utilization for process with PID 11492: 0.175%
+2025-07-01 17:21:19,524 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:21:19,524 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:22:19,525 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:22:19,525 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:23:19,527 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:23:19,527 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:24:19,528 11492 INFO CPU Utilization for process with PID 11492: 0.2%
+2025-07-01 17:24:19,528 11492 INFO CPU Utilization for process with PID 11492: 0.2%
+2025-07-01 17:25:19,529 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:25:19,529 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:26:19,531 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:26:19,531 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:27:19,532 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:27:19,532 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:28:19,533 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:28:19,533 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:29:19,534 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:29:19,534 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:30:19,535 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:30:19,535 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:31:19,536 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 17:31:19,536 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 17:32:19,537 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:32:19,537 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:33:19,538 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:33:19,538 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:34:19,539 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:34:19,539 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:35:19,540 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:35:19,540 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:36:19,541 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:36:19,541 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:37:19,542 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 17:37:19,542 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 17:38:19,544 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:38:19,544 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:39:19,545 11492 INFO CPU Utilization for process with PID 11492: 0.175%
+2025-07-01 17:39:19,545 11492 INFO CPU Utilization for process with PID 11492: 0.175%
+2025-07-01 17:40:19,546 11492 INFO CPU Utilization for process with PID 11492: 0.2%
+2025-07-01 17:40:19,546 11492 INFO CPU Utilization for process with PID 11492: 0.2%
+2025-07-01 17:41:19,547 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:41:19,547 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:42:19,548 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:42:19,548 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 17:43:19,549 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:43:19,549 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:44:19,549 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:44:19,549 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:45:19,550 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:45:19,550 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:46:19,551 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:46:19,551 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:47:19,553 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:47:19,553 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:48:19,554 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:48:19,554 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:49:19,555 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:49:19,555 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:50:19,556 11492 INFO CPU Utilization for process with PID 11492: 0.2%
+2025-07-01 17:50:19,556 11492 INFO CPU Utilization for process with PID 11492: 0.2%
+2025-07-01 17:51:19,557 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:51:19,557 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:52:19,558 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:52:19,558 11492 INFO CPU Utilization for process with PID 11492: 0.3%
+2025-07-01 17:53:19,559 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 17:53:19,559 11492 INFO CPU Utilization for process with PID 11492: 0.325%
+2025-07-01 17:54:19,560 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:54:19,560 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:55:19,561 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:55:19,561 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 17:56:19,562 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:56:19,562 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:57:19,564 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:57:19,564 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 17:58:19,565 11492 INFO CPU Utilization for process with PID 11492: 0.2%
+2025-07-01 17:58:19,565 11492 INFO CPU Utilization for process with PID 11492: 0.2%
+2025-07-01 17:59:19,566 11492 INFO CPU Utilization for process with PID 11492: 0.175%
+2025-07-01 17:59:19,566 11492 INFO CPU Utilization for process with PID 11492: 0.175%
+2025-07-01 18:00:19,567 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 18:00:19,567 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 18:01:19,569 11492 INFO CPU Utilization for process with PID 11492: 0.2%
+2025-07-01 18:01:19,569 11492 INFO CPU Utilization for process with PID 11492: 0.2%
+2025-07-01 18:02:19,570 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 18:02:19,570 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 18:03:19,571 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 18:03:19,571 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 18:04:19,573 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 18:04:19,573 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 18:05:19,574 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 18:05:19,574 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 18:06:19,575 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 18:06:19,575 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 18:07:19,576 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 18:07:19,576 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 18:08:19,577 11492 INFO CPU Utilization for process with PID 11492: 0.2%
+2025-07-01 18:08:19,577 11492 INFO CPU Utilization for process with PID 11492: 0.2%
+2025-07-01 18:09:19,578 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 18:09:19,578 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 18:10:19,580 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 18:10:19,580 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 18:11:19,581 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 18:11:19,581 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 18:12:19,581 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 18:12:19,581 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 18:13:19,582 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 18:13:19,582 11492 INFO CPU Utilization for process with PID 11492: 0.275%
+2025-07-01 18:14:19,583 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 18:14:19,583 11492 INFO CPU Utilization for process with PID 11492: 0.25%
+2025-07-01 18:15:19,584 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 18:15:19,584 11492 INFO CPU Utilization for process with PID 11492: 0.225%
+2025-07-01 18:17:56,486 11492 INFO CPU Utilization for process with PID 11492: 0.075%
+2025-07-01 18:17:56,486 11492 INFO CPU Utilization for process with PID 11492: 0.075%
