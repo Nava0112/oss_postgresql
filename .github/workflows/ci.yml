@@ -23,12 +23,14 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install pytest  # Ensure pytest is installed
 
       - name: Run tests ✅
         run: pytest test_app.py
 
   deploy:
     needs: test
+    if: github.ref == 'refs/heads/main'  # Only deploy on main branch pushes
     runs-on: ubuntu-latest
 
     steps:
@@ -39,7 +41,7 @@ jobs:
         env:
           RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
         run: |
-          curl -X POST "$RENDER_DEPLOY_HOOK"
+          curl -sSf -X POST "$RENDER_DEPLOY_HOOK"
 
       - name: Notify Sleuth of Deployment 📣
         env:
@@ -48,7 +50,8 @@ jobs:
           GITHUB_REF_NAME: ${{ github.ref_name }}
           GITHUB_ACTOR: ${{ github.actor }}
         run: |
-          curl -X POST "https://app.sleuth.io/api/v1/deployments" \
+          # Add error handling and response validation
+          response=$(curl -sSf -X POST "https://app.sleuth.io/api/v1/deployments" \
             -H "Authorization: Bearer $SLEUTH_API_TOKEN" \
             -H "Content-Type: application/json" \
             -d '{
@@ -59,6 +62,14 @@ jobs:
                 "reference": "'"$GITHUB_REF_NAME"'"
               },
               "metadata": {
-                "deployed_by": "'"$GITHUB_ACTOR"'"
+                "deployed_by": "'"$GITHUB_ACTOR"'",
+                "source": "github-actions",
+                "build_url": "https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
               }
-            }'
+            }')
+          
+          echo "Sleuth API response: $response"
+          if [ $? -ne 0 ]; then
+            echo "Failed to notify Sleuth"
+            exit 1
+          fi
