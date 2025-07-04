@@ -9,16 +9,20 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container:
-      image: navarasan0112/flask-supabase-app:latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Load .env variables
-        uses: cschleiden/dotenv@v2
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          path: .env
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Run tests ✅
         run: pytest test_app.py
@@ -26,23 +30,20 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    container:
-      image: cimg/base:stable
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Load .env variables
-        uses: cschleiden/dotenv@v2
-        with:
-          path: .env
-
       - name: Trigger Render Deployment 🚀
+        env:
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
         run: |
           curl -X POST "$RENDER_DEPLOY_HOOK"
 
       - name: Notify Sleuth of Deployment 📣
         env:
+          SLEUTH_API_TOKEN: ${{ secrets.SLEUTH_API_TOKEN }}
           GITHUB_SHA: ${{ github.sha }}
           GITHUB_REF_NAME: ${{ github.ref_name }}
           GITHUB_ACTOR: ${{ github.actor }}
