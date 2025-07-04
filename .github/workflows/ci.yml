@@ -15,11 +15,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Load .env variables
-        uses: cschleiden/dotenv@v2
-        with:
-          path: .env
-
       - name: Run tests ✅
         run: pytest test_app.py
 
@@ -32,17 +27,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Load .env variables
-        uses: cschleiden/dotenv@v2
-        with:
-          path: .env
-
       - name: Trigger Render Deployment 🚀
+        env:
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
         run: |
           curl -X POST "$RENDER_DEPLOY_HOOK"
 
       - name: Notify Sleuth of Deployment 📣
         env:
+          SLEUTH_API_TOKEN: ${{ secrets.SLEUTH_API_TOKEN }}
           GITHUB_SHA: ${{ github.sha }}
           GITHUB_REF_NAME: ${{ github.ref_name }}
           GITHUB_ACTOR: ${{ github.actor }}
