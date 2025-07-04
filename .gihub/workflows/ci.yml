@@ -1,0 +1,51 @@
+name: Test and Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container:
+      image: navarasan0112/flask-supabase-app:latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run tests ✅
+        run: pytest test_app.py
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    container:
+      image: cimg/base:stable
+    steps:
+      - name: Trigger Render Deployment 🚀
+        run: |
+          curl -X POST "https://api.render.com/deploy/srv-d1g3iv6mcj7s73cbbpbg?key=dc2XbOXGkfE"
+
+      - name: Notify Sleuth of Deployment 📣
+        env:
+          SLEUTH_API_TOKEN: ${{ secrets.SLEUTH_API_TOKEN }}
+          GITHUB_SHA: ${{ github.sha }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: |
+          curl -X POST "https://app.sleuth.io/api/1/deployments" \
+            -H "Authorization: Bearer $SLEUTH_API_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "project": "oss-app",
+              "environment": "production",
+              "deployable": {
+                "sha": "'"$GITHUB_SHA"'",
+                "reference": "'"$GITHUB_REF_NAME"'"
+              },
+              "metadata": {
+                "deployed_by": "'"$GITHUB_ACTOR"'"
+              }
+            }'
