@@ -48,17 +48,12 @@ jobs:
           GITHUB_REF_NAME: ${{ github.ref_name }}
           GITHUB_ACTOR: ${{ github.actor }}
         run: |
-          curl -X POST "https://app.sleuth.io/api/v1/deployments" \
+          curl -X POST "https://app.sleuth.io/api/1/deployments/{ORG_SLUG}/register_deploy/{DEPLOYMENT_SLUG}" \
             -H "Authorization: Bearer $SLEUTH_API_TOKEN" \
             -H "Content-Type: application/json" \
             -d '{
-              "project": "oss-app",
+              "sha": "'"$GITHUB_SHA"'",
               "environment": "production",
-              "deployable": {
-                "sha": "'"$GITHUB_SHA"'",
-                "reference": "'"$GITHUB_REF_NAME"'"
-              },
-              "metadata": {
-                "deployed_by": "'"$GITHUB_ACTOR"'"
-              }
+              "author": "'"$GITHUB_ACTOR"'",
+              "branch": "'"$GITHUB_REF_NAME"'"
             }'
