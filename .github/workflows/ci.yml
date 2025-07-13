@@ -9,6 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+      
 
     steps:
       - name: Checkout code
@@ -30,6 +31,7 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
+    environment: production
 
     steps:
       - name: Checkout code
