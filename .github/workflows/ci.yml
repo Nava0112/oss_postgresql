@@ -9,7 +9,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-      
 
     steps:
       - name: Checkout code
@@ -41,7 +40,20 @@ jobs:
         env:
           RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
         run: |
-          curl -X POST "$RENDER_DEPLOY_HOOK"
+          if [ -z "$RENDER_DEPLOY_HOOK" ]; then
+            echo "❌ RENDER_DEPLOY_HOOK is not set or empty."
+            exit 1
+          fi
+
+          echo "Triggering Render deploy hook..."
+          response=$(curl --write-out "%{http_code}" --silent --output /dev/null --fail -X POST "$RENDER_DEPLOY_HOOK")
+
+          if [ "$response" -ne 200 ]; then
+            echo "❌ Deployment failed with HTTP status $response"
+            exit 1
+          fi
+
+          echo "✅ Deployment triggered successfully with HTTP status $response"
 
       - name: Notify Sleuth of Deployment 📣
         env:
@@ -50,7 +62,7 @@ jobs:
           GITHUB_REF_NAME: ${{ github.ref_name }}
           GITHUB_ACTOR: ${{ github.actor }}
         run: |
-          curl -X POST "https://app.sleuth.io/api/1/deployments/ghost/oss-github/production/ghost/register_impact/b58eda6ba3029d806cd0b9c3e68ea64aad589977" \
+          curl -X POST "https://app.sleuth.io/api/1/deployments/ghost/oss-github/production/ghost/register_impact/zxcZxcaadf" \
             -H "Authorization: Bearer $SLEUTH_API_TOKEN" \
             -H "Content-Type: application/json" \
             -d '{
