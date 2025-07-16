@@ -1,6 +1,6 @@
 Flask
 psycopg2-binary
 apminsight
-python-dotenv
+python-dotenv==1.0.0
 pytest
 pytest-mock
